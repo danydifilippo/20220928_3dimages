@@ -13,5 +13,6 @@ images.forEach(image => {
     image.style.width = "300px"
     image.style.transform = "translateY(45deg)"
 });
-
+const foto =0
+const avanti = function() 
 
