@@ -1,18 +1,21 @@
 let images = document.getElementsByClassName('image');
+let tuttelefoto = document.getElementById('container');
 
-for (let image of images) {
-    image.style.width="600px"  
-}
-
-// un altro modo for per cambiare stile atutti gli elementi di un array
 for (let i=0; i<images.length;i++) {
-    images[i].style.width="400px"
+    images[i].style.width="300px"   
 }
 
-images.forEach(image => {
-    image.style.width = "300px"
-    image.style.transform = "translateY(45deg)"
-});
-const foto =0
-const avanti = function() 
 
+const avvia = function() {
+    let i=0
+    const fotoprec = tuttelefoto[i]
+    fotoprec.classList.remove("mostra")
+    i++
+    if (i >= tuttelefoto.lenght) {
+        i = 0
+    }
+    const fotocorrente = tuttelefoto[i]
+    fotocorrente.classList.add("mostra")
+} 
+
+console.log(avvia())

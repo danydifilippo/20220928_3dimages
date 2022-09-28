@@ -6,17 +6,21 @@
     <meta name="Animazioni 3D" content="animazioni, DOM" />
     <title>Progetto Immagini in 3D</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/671abf387b.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div>
+      <button onclick="avvia()"><i class="fa-solid fa-play"></i></button>
+      <button onclick="stop()"><i class="fa-solid fa-stop"></i></button>
+    </div>
     <div id="container">
-      <img class="image" src="./img/car-1052x1052.jpeg" alt="car" />
+      <img class="image mostra" src="./img/car-1052x1052.jpeg" alt="car" />
       <img class="image" src="./img/coffee-1052x1052.jpeg" alt="coffee" />
       <img class="image" src="./img/dog-1052x1052.jpeg" alt="dog" />
       <img class="image" src="./img/jelly-1052x1052.jpeg" alt="jelly" />
       <img class="image" src="./img/tiger-1052x1052.jpeg" alt="tiger" />
       <img class="image" src="./img/wall-1052x1052.jpeg" alt="wall" />
     </div>
-    <button onclick="avvia()">></button>
     <script src="./js/script.js"></script>
   </body>
 </html>
