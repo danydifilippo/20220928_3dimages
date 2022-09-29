@@ -1,21 +1,17 @@
 let images = document.getElementsByClassName('image');
 let tuttelefoto = document.getElementById('container');
+let i=0
+let fotoprev = images[i]
 
-for (let i=0; i<images.length;i++) {
-    images[i].style.width="300px"   
+
+
+function avvia() {
+    fotoprev.classList.remove("mostra")
+    i++
+    if (i>images.lenght) {
+        i=0
+    }
+    let fotonext = images[i]
+    fotonext.classList.add("mostra")
 }
 
-
-const avvia = function() {
-    let i=0
-    const fotoprec = tuttelefoto[i]
-    fotoprec.classList.remove("mostra")
-    i++
-    if (i >= tuttelefoto.lenght) {
-        i = 0
-    }
-    const fotocorrente = tuttelefoto[i]
-    fotocorrente.classList.add("mostra")
-} 
-
-console.log(avvia())

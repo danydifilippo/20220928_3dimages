@@ -14,6 +14,7 @@
 .image {
     -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(#ff0000));
     transform: matrix(0.5,0,0,1,0,0);
+    width: 300px;
 }
 
 .mostra {
